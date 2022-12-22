@@ -1,45 +1,45 @@
 # 🪙 Crypto-Crowdfunding
 
-Uma aplicação de arrecadação de fundos estilo Vakinha Online no ecosistema da Web3. Pessoas podem criar campanhas e ajuda-las usando criptomoedas. </br>
+A  fundraising application in the Web3 ecosystem. People can create campaigns and help them using cryptocurrencies. </br>
 
 ### 🌐 Live url: https://crypto-crowdfunding-client.vercel.app/  </br>
 
 <img src='https://user-images.githubusercontent.com/94712001/208749957-a844f123-a3d9-4e6c-9987-4b46b65fa0da.png' alt='imagem'/>
 
 
-## ❓ Como usar
+## ❓ How to use it 
 
 <ul>
-  <li>Primeiro de tudo, tenha a carteira metamask instalada no seu browser, se não tiver, pode <a href='https://metamask.io/' _blank>Clicar aqui</a>, baixar e criar uma conta.</li>
-  <li>Ative a rede de teste no seu metamask.</li>
-  <li>Entre e faça login no site <a href='https://goerlifaucet.com/' _blank>Goerli Faucet</a>, cole seu endereço da carteira no input e envie eth para sua carteira, essa parte é bem importante, pois esses eth que você vai está enviando são criptos de teste.</li>
+  <li>First of all, make sure that you have the metamask wallet installed in your browser, if not,<a href='https://metamask.io/' _blank>click here to download</a>, and create an account.</li>
+  <li>Turn on test network in your metamask</li>
+  <li>Sign in on <a href='https://goerlifaucet.com/' _blank>Goerli Faucet</a>, paste your wallet address and send test ETH , this part it´s important, because we´re gonna work with fake money for a while, we don´t want to use real money yet.</li>
 </ul>
 
-### Após ter completado os passos acima, vamos a instalação do projeto.
+### After completed the steps above, let´s install the project.
 
-Para instalar, siga estas etapas:
+Follow the steps:
 
 ```
 gh repo clone RobertoAthos/Crypto-Crowdfunding
 ```
 
-Na pasta Client & Blockchain
+In the Client and Blockchain folder
 
 ```
 npm install
 ```
 
-### Depois de ter instalado, vamos para algumas configurações importantes no projeto.
+### After you get installed, we´re gonna set some important configurations.
 
-Na pasta **Blockchain**, crie um arquivo **.env** com a chave privada da sua metamask:
-> Não esqueça de sempre colocar esse tipo de informaçãoem um aquivo .env, não compartilhe com ninguém a sua chave privada da carteira.
+In **Blockchain** folder , create a new **.env** file with your metamask private key:
+> Dont forget to always put this type of information in an .env file, do not share your private wallet key with anyone.
 
 ```
-PRIVATE_KEY = 'Cole sua private key aqui'
+PRIVATE_KEY = 'Secret key here'
 ```
 
-Em seguida, no arquivo **hardhat.config.js**, adicione o código abaixo
-> No seu caso como vamos está clonando o repositório, crie esse arquivo hardhat.config.js na sua pasta blockchain e cole o código abaixo.
+In **hardhat.config.js** file, add the following code:
+> In your case, we´re gonna clone the repository, create the hardhat.config.js file in your blockchain folder and paste the code below.
 
 ```
 module.exports = {
@@ -63,7 +63,7 @@ module.exports = {
 };
 ```
 
-### E pronto ! A aplicação já vai está pronta, aproveite 😄.
+### Done ! The application will be ready to run, enjoy it 😄.
 
 
 
